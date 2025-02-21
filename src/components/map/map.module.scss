@@ -1,0 +1,33 @@
+.aside{
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 20px;
+  background-color: var(--main-white, white);
+  align-self: stretch;
+  flex-shrink: 0;
+  .map{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .aside {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1440px){
+  .aside {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .aside {
+    width: 100%;
+    height: 400px;
+  }
+}

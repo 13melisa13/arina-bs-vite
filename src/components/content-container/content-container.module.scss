@@ -1,0 +1,25 @@
+.contentContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+    flex-grow: 2;
+  line-height: 1;
+}
+@media screen and (min-width: 1440px){
+  .contentContainer{
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 1440px){
+  .contentContainer{
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 1024px){
+  .contentContainer{
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+

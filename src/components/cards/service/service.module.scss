@@ -1,0 +1,172 @@
+.card{
+      box-sizing: border-box;
+
+    --button-size: 30px;
+    display: flex;
+    position: relative;
+    justify-content: start;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 4px 0 #00000040;
+    flex-shrink: 0;
+    .background{
+        border-radius: 20px;
+        object-fit: cover;
+      height: 100%;
+      width: calc(100% / 5 * 2);
+        }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+
+        justify-self: stretch;
+        flex-grow: 2;
+
+    }
+  .title{
+    text-transform: uppercase;
+  }
+  .button{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: var(--button-size);
+    height: var(--button-size);
+    //padding-bottom: 100%;
+    //height: var(--button-size);
+    object-fit: contain;
+
+  }
+  .price{
+    align-self: flex-end;
+    justify-self: stretch;
+    flex-grow: 1;
+    align-content: end;
+  }
+  .busynessName{
+    color: var(--input-text-color, grey);
+  }
+
+}
+
+@media screen and (min-width: 1440px){
+    .card {
+        height: var(--card-horizontal-height-xl);
+        width: var(--card-horizontal-width-xl);
+        padding-right: var(--button-size);
+      .text{
+        gap: 10px;
+        padding: 30px;
+      }
+
+    }
+    .title{
+        font: var(--card-title-xl);
+    }
+  .busynessName{
+    font: var(--card-description-xl);
+  }
+
+  .price{
+    font: var(--card-price-xl);
+  }
+}
+@media screen and (max-width: 1440px){
+     .card {
+        height: var(--card-horizontal-height-l);
+        width: var(--card-horizontal-width-l);
+       padding-right: var(--button-size);
+
+       .text{
+        gap: 10px;
+        padding: 25px;
+       }
+    }
+    .title{
+        font: var(--card-title-l);
+    }
+    .busynessName{
+        font: var(--card-description-l);
+    }
+    .price{
+        font: var(--card-price-l);
+    }
+}
+@media screen and (max-width: 1024px){
+     .card {
+        height: var(--card-horizontal-height-m);
+       width: 100%;
+        //width: var(--card-horizontal-width-m);
+       padding-right: var(--button-size);
+       .text{
+        gap: 10px;
+        padding: 30px;
+       }
+    }
+
+    .title{
+        font: var(--card-title-m);
+    }
+    .busynessName{
+        font: var(--card-description-m);
+
+    }
+    .price{
+        font: var(--card-price-m);
+    }
+}
+@media screen and (max-width: 768px) {
+    .card {
+        height: var(--card-horizontal-height-s);
+        //width: var(--card-horizontal-width-s);
+
+       //padding-right: var(--button-size);
+       .text{
+        gap: 10px;
+        padding: 25px;
+       }
+    }
+    .title{
+        font: var(--card-title-s);
+    }
+    .busynessName{
+        font: var(--card-description-s);
+    }
+    .price{
+        font: var(--card-price-s);
+    }
+
+}
+@media screen and (max-width: 425px) {
+    .card {
+        height: var(--card-horizontal-height-xs);
+        width: 100%;
+        //width: var(--card-horizontal-width-xs);
+       padding-right:0;
+       .text{
+        gap: 10px;
+        padding: 15px;
+       }
+      .button{
+    bottom: 5px;
+    left: 50%;
+        right: unset;
+    top: unset;
+
+  }
+    }
+    .title{
+        font: var(--card-title-xs);
+    }
+    .busynessName{
+        font: var(--card-description-xs);
+    }
+    .price{
+        font: var(--card-price-xs);
+    }
+
+
+}
+

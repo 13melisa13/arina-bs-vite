@@ -1,0 +1,121 @@
+.inputBox{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: clamp(300px, 80%, 450px);
+  padding: 0 20px;
+  box-sizing: border-box;
+  .label{
+    align-self: flex-start;
+  }
+  .input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: var(--input-text-color);
+    border-radius: 5px;
+  }
+  .input:focus{
+    outline: none;
+    border: 2px solid var(--input-text-color);
+  }
+  .errorInput, {
+    border: 2px solid var(--red);
+  }
+    .successInput{
+        border: 2px solid var(--green);
+    }
+    .error{
+        color: var(--red);
+        align-self: flex-start;
+    }
+}
+@media screen and (min-width: 1440px){
+  .inputBox{
+    gap: 10px;
+  }
+  .label{
+    font: var(--link-title-xl);
+  }
+  .error{
+    font: var(--font-simple-xl)
+  }
+  .input{
+    font: var(--font-simple-xl);
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .inputBox{
+    gap: 10px;
+  }
+  .label{
+    font: var(--link-title-xl);
+  }
+  .error{
+    font: var(--font-simple-xl)
+  }
+  .input{
+    font: var(--font-simple-xl);
+  }
+}
+
+@media screen and (max-width: 1440px){
+  .inputBox{
+    gap: 10px;
+  }
+  .label{
+    font: var(--link-title-l);
+  }
+  .error{
+    font: var(--font-simple-l)
+  }
+  .input{
+    font: var(--font-simple-l);
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .inputBox{
+    gap: 10px;
+  }
+  .label{
+    font: var(--link-title-m);
+  }
+  .error{
+    font: var(--font-simple-m)
+  }
+  .input{
+    font: var(--font-simple-m);
+  }
+}
+
+@media screen and (min-width: 768px){
+  .inputBox{
+    gap: 10px;
+  }
+  .label{
+    font: var(--link-title-s);
+  }
+  .error{
+    font: var(--font-simple-s)
+  }
+  .input{
+    font: var(--font-simple-s);
+  }
+}
+
+@media screen and (min-width: 425px){
+  .inputBox{
+    gap: 10px;
+  }
+  .label{
+    font: var(--link-title-xs);
+  }
+  .error{
+    font: var(--font-simple-xs)
+  }
+  .input{
+    font: var(--font-simple-xs);
+  }
+}
