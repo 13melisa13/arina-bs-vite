@@ -7,6 +7,7 @@ import Service from "../../components/cards/service/Service";
 import {useEffect, useState} from "react";
 
 
+const apiUrl = import.meta.env.VITE_API_URL;
 
 export default function IndexPage() {
 	const productCart = useSelector(getProducts);
@@ -14,6 +15,18 @@ export default function IndexPage() {
 	const [adverts, setAdverts] = useState([]);
 	const [products, setProducts] = useState([]);
 	const [services, setServices] = useState([]);
+
+	useEffect(() => {
+		fetch(`${apiUrl}/adverts`)
+			.then(response => response.json())
+			.then(data => setAdverts(data));
+		fetch(`${apiUrl}/products`)
+			.then(response => response.json())
+			.then(data => setProducts(data));
+		fetch(`${apiUrl}/services`)
+			.then(response => response.json())
+			.then(data => setServices(data));
+	}, []);
 
 	useEffect(() => {
 		if (window.innerWidth <= 1024) {
