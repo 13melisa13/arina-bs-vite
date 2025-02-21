@@ -156,20 +156,20 @@
     //margin-right: .5em;
 }
 .img-cart {
-    background-image: url("~/src/assets/images/cart.png");
+    background-image: url("/src/assets/images/cart.png");
 }
 .img-heart {
-    background-image: url("~/src/assets/images/heart.png");
+    background-image: url("/src/assets/images/heart.png");
 }
 .img-before::before{
 
-  background-image: url("~/src/assets/images/heart.png");
+  background-image: url("/src/assets/images/heart.png");
 }
 //.img-heart:hover{
-//    background-image: url("~/src/assets/images/heart-hover.png");
+//    background-image: url("/src/assets/images/heart-hover.png");
 //}
 .img-search {
-    background-image: url("~/src/assets/images/search-button.svg");
+    background-image: url("/src/assets/images/search-button.svg");
     background-size: 25% 25%;
     background-color: var(--white);
 }
